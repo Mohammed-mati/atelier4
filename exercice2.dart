@@ -6,4 +6,17 @@ class Point {
 void move(double dx, double dy) {
     _x += dx;
     _y += dy;
+      void display() {
+    print('Coordonnees : ($_x, $_y)');
   }
+}
+
+void main() {
+  var pt = Point(2, 5);
+
+  pt.display();
+
+  pt.move(-1, 3);
+
+  pt.display();
+}
