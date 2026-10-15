@@ -26,4 +26,13 @@ class Rectangle extends Forme {
   double calculerAire() {
     return longueur * largeur;
   }
+}void main() {
+  final Cercle cercle = Cercle(5);
+  final Rectangle rectangle = Rectangle(8, 4);
+
+  cercle.afficherMessage();
+  print("Aire du cercle : ${cercle.calculerAire()}");
+
+  rectangle.afficherMessage();
+  print("Aire du rectangle : ${rectangle.calculerAire()}");
 }
