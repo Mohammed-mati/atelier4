@@ -14,3 +14,19 @@ class Livre {
   void afficherInfos() {
     print("Titre: $titre, Auteur: $auteur");
   }
+
+  static void afficherTotal() {
+    print("Nombre total de livres : $totalLivres");
+  }
+}
+
+void main() {
+  var l1 = Livre("L'Étranger", "Albert Camus");
+  var l2 = Livre("Le Petit Prince", "Antoine de Saint-Exupéry");
+
+  l1.afficherInfos();
+  l2.afficherInfos();
+  print("Pages de l1 : ${l1.pages}");
+
+  Livre.afficherTotal();
+}
